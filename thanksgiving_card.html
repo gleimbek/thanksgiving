@@ -1,0 +1,131 @@
+<html>
+  <head>
+    <link href="https://fonts.googleapis.com/css?family=Archivo+Narrow|Cookie&display=swap" rel="stylesheet">
+    <style>
+      body {
+        width: 100%;
+        height: 80vh;
+        perspective: 1200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-family: 'Archivo Narrow', sans-serif;
+		background-image: url('back.jpg');
+		background-size: cover;
+		background-position: center; 
+		background-repeat: no-repeat; 
+      }
+
+      .card {
+        transform-style: preserve-3d;
+        position: relative;
+        height: 450px;
+        cursor: pointer;
+      }
+
+      .front, .back, .page {
+        transform-style: preserve-3d;
+        transform-origin: left center;
+        transition: transform .5s ease-in-out, box-shadow .5s ease-in-out;
+        position: absolute;
+        width:320px;
+        height: 100%;
+        top: 0; 
+        left: 0;
+        background-color: #dd7722;
+        padding: 40px;
+		background-size: cover;
+		margin-left:-700px;
+      }
+
+      .card:hover .front {
+        transform: rotateY(-160deg);
+        box-shadow: 0 1em 3em 0 rgba(0, 0, 0, .2);
+      }
+
+      .card:hover .page {
+        transform: rotateY(-159deg);
+        box-shadow: 0 1em 3em 0 rgba(0, 0, 0, .2);
+      }
+
+      .card:hover .back {
+        transform: rotateY(-20deg);
+        box-shadow: 0 1em 3em 0 rgba(0, 0, 0, .2);
+      }
+	  .front{
+		background: url('gobble.jpg') no-repeat center darkred;
+		background-size: cover;
+    }
+	img{
+	   margin-top: 30px;
+	   width: 300px;
+	   transform: scaleX(-1);
+	}
+	h1 {
+		font-family: 'Cookie', serif;
+		font-size: 120px;
+		color: white; 
+	}
+	.happy h1{
+		margin-top:-50px;
+		margin-right:800px;
+	}
+	
+	.message {
+		color:white;
+	}
+	h4{
+		margin-top:-10px;
+		font-family: 'Cookie', serif;
+		font-size: 25px;
+	}
+	h5 {
+	font-family: 'Cookie', serif;
+	font-size: 20px;
+	margin-top:-10px;
+	text-align:right;
+	}
+	p {
+	margin-top:-20px;
+	font-size: 16px;
+	text-align:left;
+	font-weight:normal;
+	}
+    </style>
+  </head>
+  <body>
+  <div class="happy"> 
+		<h1>Happy </h1>
+		<h1>Thanksgiving!!!</h1>
+	  </div>
+    <div class="card">
+      <div class="back">
+		<div class="message">
+			<h4>Dear students,</h4>
+			<p>In this season of gratitude, I want to extend my heartfelt congratulations to all of you 
+			who have successfully completed the HTML and CSS class. This milestone is a reflection of your hard work, 
+			commitment, and passion for learning — qualities that are truly inspiring.
+
+			Thanksgiving reminds us to pause and appreciate the journey, the knowledge gained, and the community 
+			that supports us. Just as coding requires collaboration, attention to detail, and perseverance, this holiday 
+			teaches us about the value of connection, gratitude, and shared purpose.
+
+			May this Thanksgiving fill your hearts with warmth and thankfulness, and may the skills you've 
+			cultivated open doors to new possibilities and achievements.
+
+			We wish you and your loved ones a wonderful holiday filled with joy, delicious food, and moments to cherish. 
+			Here's to a future of continued growth, success, and opportunities to shine.</p>
+			
+			<h5>Happy Thanksgiving! </br>Prof. Mahima Pandey and Gustavo Leimbek</h5>
+		</div>
+      </div>
+      <div class="page">
+		<img src="thanksgiving1.gif">
+      </div>
+	  <div class="front">
+      </div>
+    </div>
+	
+  </body>
+</html>
